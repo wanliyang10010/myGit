@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.9.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<style type="text/css">
+			p{
+				font-family: "微软雅黑";
+				font-size: 16px;
+				text-indent: 15em;
+				margin-bottom: 5px;
+			}
+		</style>
+		<script type="text/javascript">
+			function ok(){
+				window.open("1.html")
+			}
+		</script>
+	</head>
+	<body>
+		<div class="col-md-12 text-center">
+		<h3 >将已有项目提交到github/从github上pull到本地</h3>
+		</div>
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-10">
+		<p><B>添加已有项目到github</B></p>
+		<p>新建repository，可以在github网站上直接新建或者使用windows github工具。</p>
+		<p>进入github repository 项目</p>
+		<p>在github windows工具中使用git Bash打开项目，使用cd命令进入已有项目根目录下</p>
+		<p>touch README.md //新建说明文件<br/></p>
+		<p>git init //在当前项目目录中生成本地git管理,并建立一个隐藏.git目录<br/></p>
+		<p>git add . //添加当前目录中的所有文件到索引<br/></p>
+		<p>git commit -m "first commit" //提交到本地源码库，并附加提交注释<br/></p>
+		<p>git remote add origin https://github.com/chape/test.git //添加到远程项目，别名为origin<br/></p>
+		<p>git push -u origin master //把本地源码库push到github 别名为origin的远程项目中，确认提交<br/></p>
+		<p>提交完成，查看repository。<br/></p>
+		<p><B>更新代码</B></p>
+		
+		<p>cd /d/TVCloud</p>
+		<p>git add .</p>
+		<p>git commit -m "update test" //检测文件改动并附加提交注释</p>
+		<p>git push -u origin master //提交修改到项目主线</p>
+		
+		<p><B>github常用命令</B></p>
+		
+		<p>git push origin master //把本地源码库push到Github上</p>
+		<p>git pull origin master //从Github上pull到本地源码库</p>
+		<p>git config --list //查看配置信息</p>
+		<p>git status //查看项目状态信息</p>
+		<p>git branch //查看项目分支</p>
+		<p>git checkout -b host//添加一个名为host的分支</p>
+		<p>git checkout master //切换到主干</p>
+		<p>git merge host //合并分支host到主干</p>
+		<p>git branch -d host //删除分支host</p>
+		<div class="text-center">
+			<input type="button" class="btn bg-primary text-center" id="" value="点我进入下一页" onclick="ok();"/>
+		</div>
+		
+		</div>
+		<div class="col-md-1">
+		</div>
+	</body>
+</html>
